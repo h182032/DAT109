@@ -20,7 +20,7 @@ public class Kopp {
         sum = 0;
         for(int i = 0; i < terninger.size(); i++){
             terninger.get(i).trill();
-            sum = terninger.get(i).getVerdi();
+            sum += terninger.get(i).getVerdi();
         }
     }
 

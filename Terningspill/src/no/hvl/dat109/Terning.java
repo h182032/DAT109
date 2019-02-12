@@ -1,17 +1,20 @@
 package no.hvl.dat109;
 
+import java.util.Random;
+
 public class Terning {
 
     private int verdi;
-    private static final int MAX = 6;
+    private Random rand;
 
     public Terning(){
+        this.rand = new Random();
         this.verdi = 0;
         trill();
     }
 
     public void trill() {
-        verdi = (int)((Math.random() * MAX) + 1);
+        verdi = rand.nextInt(6)+ 1;
     }
 
     public int getVerdi(){

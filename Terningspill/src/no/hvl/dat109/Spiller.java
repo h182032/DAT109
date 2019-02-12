@@ -31,7 +31,6 @@ public class Spiller {
 
     @Override
     public String toString() {
-        return navn + " triller: " +
-                verdi + " poeng";
+        return navn + " triller: " + verdi + " poeng";
     }
 }
